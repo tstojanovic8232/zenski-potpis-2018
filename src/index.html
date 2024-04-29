@@ -1,0 +1,626 @@
+﻿	<!DOCTYPE html>
+										
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <script src="sliderengine/jquery.js"></script>
+    <script src="sliderengine/amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="sliderengine/amazingslider-1.css">
+    <script src="sliderengine/initslider-1.js"></script>
+    <script>
+        
+
+        window.onscroll = function () { F_ingStickAlready() };
+
+        var navbar = document.getElementById("myTopnav");
+
+        var sticky = navbar.offsetTop;
+
+        function F_ingStickAlready() {
+            alert(navbar.offsetTop);
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+        var idzene = "";
+        function show(id) {
+            document.getElementById("overlay1").style.display = "block";
+            document.getElementById(id).style.display = "block";
+            idzene = id;
+        }
+        function hide() {
+            document.getElementById("overlay1").style.display = "none";
+            document.getElementById(idzene).style.display = "none";
+        }
+
+        function openCity(evt, cityName) {
+
+            var i, tabcontent, tablinks;
+
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            document.getElementById(cityName).style.display = "initial";
+            evt.currentTarget.className += " active";
+        }
+
+        document.getElementById("defaultOpen").click();
+
+        function Enter() {
+
+            document.getElementsById("amazingslider-slides").style.display = "block";
+        }
+    </script>
+    <meta charset="utf-8" />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Ženski Potpis</title>
+</head>
+<body>
+    <div id="overlay1">
+        <div id="closeBtn"><i class="fa fa-times fa-3x" onclick="hide()"></i></div>
+        <div id="zene">
+            <div id="id1" style="display:none;">
+                <div style="padding:15px;position:fixed;"><img src="Slike/JocelynBurnell.jpg" alt="" style="width:inherit;height:inherit;" /></div>
+                <div style="padding:15px;width:45%;height:65%;text-align:justify;float:right;">
+                    <h3>Jocelyn Bell Burnell</h3>
+                    <p>Datum rodjenja: 1943.</p>
+                    <p>
+                        Jocelyn Bell Burnell, rođena u Severnoj Irskoj, doktorirala je astrofiziku na Univerzitetu Kembridž.
+                        Tokom postdiplomskih studija radila je u timu koji je konstruisao radio-teleskop, uz pomoć kojeg je uočila radio-signal za koji je ustanovila da potiče od rotirajuće neutronske zvezde (pulsara).
+                        Napravila je prve precizne analize pulsara. Za ovo najveće astronomsko otkriće 20. veka njen supervizor i njegov kolega dobili su Nobelovu nagradu za fiziku 1974. godine.
+                        Kasnije je dobila mnoge nagrade i počasti, između ostalog, postala je predsednica Kraljevskog astronomskog društva i prva žena predstavnica Instituta za fiziku.
+                    </p>
+                </div>
+            </div>
+            <div id="id2" style="display:none;">
+                <div style="padding:15px;position:fixed;"><img src="Slike/GertrudeElion.jpg" alt="" style="width:inherit;height:inherit;" /></div>
+                <div style="padding:15px;width:45%;height:65%;text-align:justify;float:right;">
+                    <h3>Gertrude Belle Elion</h3>
+                    <p>Datum rodjenja: 1918.</p>
+                    <p>Datum smrti: 1999.</p>
+                    <p>
+                        Gertrude Elion bila je američka farmakološkinja. 1937. godine diplomirala je biohemiju na koledžu Hunter u Njujorku.
+                        Velika ekonomska kriza sprečila ju je da se upiše na postdiplomske studije, ali to je nije obeshrabrilo.
+                        Pre nego što je dobila posao u farmaceutskoj kompaniji Burroughs-Wellcome, radila je kao nastavnica i asistentkinja u laboratoriji za samo 20$ nedeljno.
+                        Tu je razvila purinetol (prvi lek protiv leukemije), pirimetamin (lek protiv malarije) i aciklovir (lek protiv herpesa). Kasnije je nadgledala prilagođavanje azidotimidina, prvog leka protiv side.
+                        Iako nikada nije doktorirala, godine 1988. dobila je Nobelovu nagradu za fiziologiju ili medicinu.
+                        Nagradu je podelila sa američkim lekarom Georgeom H. Hitchingsom i školskim lekarom i farmakologom Jamesom Blackom.
+                    </p>
+                </div>
+            </div>
+            <div id="id3" style="display:none;">
+                <div style="padding:15px;position:fixed;"><img src="Slike/JaneGoodall.jpg" alt="" style="width:inherit;height:inherit;" /></div>
+                <div style="padding:15px;width:45%;height:65%;text-align:justify;float:right;">
+                    <h3>Jane Goodall</h3>
+                    <p>Datum rodjenja: 1934.</p>
+                    <p>
+                        Dr Jane Goodall rođena je u Londonu 1934. godine. Bavi se primatologijom, etologijom i antropologijom. Smatra se najvećom ekspertkinjom za šimpanze na svetu.
+                        Ceo život je posvetila proučavanju nihovog društvenog i porodičnog života, i načinu saznavanja i razmišljanja u prirodnim uslovima.
+                        Ključni momenat u njenom radu bilo je otkriće da šimpanze prave alatke, što je u potpunosti redefinisalo odnos naučne zajednice prema primatima.
+                        Njen rad odlikuje etička i emotivna komponenta i davanje imena posmatranim životinjama, čime je odstupila od konvencionalnog označavanja brojevima.
+                        Jedna je od nekoliko osoba koje su na Kembridžu stekle doktorat bez diplome osnovnih studija.
+                        Snimila je veliki broj filmova i napisala čitav niz naučnih i dečijih knjiga koje se bave razumevanjem i zaštitom životinja.
+                        Godine 1977. osnovala je istraživački institut, a 14 godina kasnije osnovala je obrazovni program za zaštitu okoline "Roots&Shoots",
+                        koji je uključio desetine hiljada dece i mladih iz gotovo 100 zemalja sveta.
+                    </p>
+                </div>
+            </div>
+            <div id="id4" style="display:none;">
+                <div style="padding:15px;position:fixed;"><img src="Slike/MargaretHamilton.jpg" alt="" style="width:inherit;height:inherit;" /></div>
+                <div style="padding:15px;width:45%;height:65%;text-align:justify;float:right;">
+                    <h3>Margaret Hamilton</h3>
+                    <p>Datum rodjenja: 1936.</p>
+                    <p>
+                        Margaret Hamilton imala je samo 24 godine kada je diplomirala matematiku i zaposlila se na Institutu za tehnologiju u Masačusetsu (MIT) .
+                        Kada je vlada SAD-a zatražila MIT-a da učestvuje u svemirskom programu, mlada matematičarka je postala vođa ekipe zadužene za softver lunarnog i komandnog  modula misije Apolo.
+                        Dizajnirala je "asinhroni sistem" koji omogućava da se prednost da suštinskim funkcijama. Zahvaljujući tome, Apolo 11 je izbegao krizu koja bi preopteretila kompjuter i uspešno sleteo na Mesec.
+                        Treba imati na umu da je program napisala ručno, bez pomoći kompjutera. Stvorila je termin "softversko inženjerstvo", kako bi ta discplina dobila potrebno priznanje.
+                    </p>
+                </div>
+            </div>
+            <div id="id5" style="display:none;">
+                <div style="padding:15px;position:fixed;"><img src="Slike/DorothyHodgkin.jpg" alt="" style="width:inherit;height:inherit;" /></div>
+                <div style="padding:15px;width:45%;height:65%;text-align:justify;float:right;">
+                    <h3>Dorothy Crowfoot Hodgkin</h3>
+                    <p>Datum rodjenja: 1910.</p>
+                    <p>Datum smrti: 1994.</p>
+                    <p>
+                        Dorothy Crowfoot Hodgkin studirala je hemiju i biohemiju na Univerzitetu u Oksfordu u Engleskoj. Već tokom studija odlučila da se posveti istraživanju strukture kristala pomoću difrakcije X-zraka.
+                        Smatra se utemeljivačicom kristalografske tehnike proučavanja strukture bioloških makromolekula, pre svega proteina. Dorothy je 1934. godine odredila strukturu proteina pepsina.
+                        Godine 1944. uspela je da odredi strukturu penicilina. Koristeći jedan od prvih digitalnih računara uspela je da odredi strukturu vitamina B12 i za ovo otkriće dobila je Nobelovu nagradu za hemiju 1964. godine.
+                        Kasnije je, uz pomoć računara, odredila i strukturu insulina.
+                    </p>
+                </div>
+            </div>
+            <div id="id6" style="display:none;">
+                <div style="padding:15px;position:fixed;"><img src="Slike/GraceHopper.jpg" alt="" style="width:inherit;height:inherit;" /></div>
+                <div style="padding:15px;width:45%;height:65%;text-align:justify;float:right;">
+                    <h3>Grace Hopper</h3>
+                    <p>Datum rodjenja: 1906.</p>
+                    <p>Datum smrti: 1992.</p>
+                    <p>
+                        Grace Hopper, admiralka američke mornarice, jedna je od prvih programerki u istoriji. Na njenom radu se bazira i razvija ogroman broj izuma od kojih zavisi digitalno računarstvo.
+                        Razvila je prvi kompajler (program za prevođenje instrukcija sa programskog na mašinski jezik).
+                        Termini "bug" i "debug" uvedeni su u programiranje kada je Grace našla i sklonila noćnog moljca zaglavljenog u releju računara, koji je ometao njegov rad.
+                        Zaslužna je za razvoj prvog programskog jezika baziranog na engleskom jeziku - COBOL. Pre toga programiranje se vršilo na mašinskom jeziku.
+                        Veliki broj programa koji se i danas koriste, među kojima je najznačajniji Microsoft Windows, bazirani su na radu Grace Hopper.
+                    </p>
+                </div>
+            </div>
+            <div id="id7" style="display:none;">
+                <div style="padding:15px;position:fixed;"><img src="Slike/HedyLamarr.jpg" alt="" style="width:inherit;height:inherit;" /></div>
+                <div style="padding:15px;width:45%;height:65%;text-align:justify;float:right;">
+                    <h3>Hedy Lamarr</h3>
+                    <p>Datum rodjenja: 1914.</p>
+                    <p>Datum smrti: 2000.</p>
+                    <p>
+                        Slavna holivudska glumica Hedy Lamarr, rođena je u Austriji. Bila je inovatorka na polju bežičnih komunikacija.
+                        Iako nije imala formalno tehničko obrazovanje, zajedno sa kompozitorom Georgeom Antheilom, razvila je patent "sistem za tajnu komunikaciju".
+                        Bio je to novi, nemoguć za ometanje, način vođenja radio-upravlivih torpeda. Patent nije korišćen do 1962. godine, kada ga je upotrebila američka mornarica.
+                        Ova tehnologija je bila ključna za razvoj današnje bežične telekomunikacije.
+                        Priznanje za svoje pronalaske dobila je tek 1997. godine kada je postala prva žena koja je primila prestižnu nagradu BULBIE Gnass Spirit of Achievement Award.
+                        Njen rođendan slavi se kao međunarodni dan pronalazača.
+                    </p>
+                </div>
+            </div>
+            <div id="id8" style="display:none;">
+                <div style="padding:15px;position:fixed;"><img src="Slike/HenriettaLeavitt.jpg" alt="" style="width:inherit;height:inherit;" /></div>
+                <div style="padding:15px;width:45%;height:65%;text-align:justify;float:right;">
+                    <h3>Henrietta Swan Leavitt</h3>
+                    <p>Datum rodjenja: 1868.</p>
+                    <p>Datum smrti: 1921.</p>
+                    <p>
+                        Amerikanka Henrietta Swan Leavitt diplomirala je fiziku i astronomiju. Radila je u harvardskoj opservatoriji na klasifikovanju zvezda po izgledu spektra.
+                        Kao žena, u početku nije bila plaćena za svoj rad, a kasnije je dobijala samo 0.3 dolara po satu. Ustanovila je odnos između perioda zvezda i njihovog sjaja.
+                        To otkriće je omogućilo da se odredi udaljenost zvezda i otvorilo vrata teorijama Velikog praska i širenja vasione.
+                        Analizirala je oko 300 zvezda sa 13 teleskopa da bi sastavila svoju skalu koja je zvanično prihvaćena 1913. godine. Nakon njene smrti, Edvin Habl je pomoću njenog otkrića cefeida uspeo da dokaže da se svermir širi.
+                        Godine 1924, pre nego što se saznalo da je tri godine ranije umrla od raka, u Švedskoj kraljevskoj akademiji nauka počela je priprema dokumentacije za kandidovanje Henriette Leavitt za Nobelovu nagradu.
+                        Njeno otkriće zauvek je promenilo shvatanja u astronomiji.
+                    </p>
+                </div>
+            </div>
+            <div id="id9" style="display:none;">
+                <div style="padding:15px;position:fixed;"><img src="Slike/LiseMeitner.jpg" alt="" style="width:inherit;height:inherit;" /></div>
+                <div style="padding:15px;width:45%;height:65%;text-align:justify;float:right;">
+                    <h3>Lise Meitner</h3>
+                    <p>Datum rodjenja: 1878.</p>
+                    <p>Datum smrti: 1968.</p>
+                    <p>
+                        Lise Meitner jedna je od najuticajnijih naučnica 20. veka na polju radioaktivnosti i nuklearne fizike. Rođena je u Beču. Sa 27 godina postala je prva žena koja je stekla doktorat na Bečkom Univerzitetu.
+                        U Berlinu počinje rad sa Max Planck i hemičarom Ottom Hahnom. Meitner je naišla na veliki otpor dominantno muške istraživačke zajednice. Radila je na institutu bez zvaničnog zaposlenja i plate.
+                        Pošto joj nije bilo dozvoljeno da koristi laboratorije instituta, radila je u podrumu. Godine 1926. postala je prva žena redovna profesorka Univerziteta u Berlinu.
+                        Godine 1939. zajedno sa svojim nećakom Ottom Frischom objavila je objašnjenje procesa fisije atomskog jezgra. Iako je sa Ottom Hahnom radila na projektu nuklearne fisije, samo je on dobio Nobelovu nagradu za hemiju.
+                        Lise Meitner odbila je poziv Saveznika da radi na atomskoj bombi.
+                    </p>
+                </div>
+            </div>
+            <div id="id10" style="display:none;">
+                <div style="padding:15px;position:fixed;"><img src="Slike/MajaMataric.jpg" alt="" style="width:inherit;height:inherit;" /></div>
+                <div style="padding:15px;width:45%;height:65%;text-align:justify;float:right;">
+                    <h3>Maja Matarić</h3>
+                    <p>Datum rodjenja: 1966.</p>
+                    <p>
+                        Maja J. Matarić, profesorka robotike, neurologije i pedijatrije, direktorka je Centra za robotička istraživanja i zamenica dekana Viterbi škole za inženjerstvo Univerziteta Južne Kalifornije.
+                        Višestruko je nagrađivana za istraživački, obrazovni i mentorski rad u nauci, matematici i inženjerstvu.
+                        Reč je o dostignućima u tehnologiji koja uključuje odnos ljudi i robota u cilju bržeg oporavka teško bolesnih osoba. Roboti koje Maja kreira ne mogu se koristiti u ratne svrhe.
+                        Njena istraživačka grupa razvija robote koji treba da pomognu ljudima posle srčanog udara, kako bi bili više motivisani za rehabilitacione vežbe, alchajmerovim bolesnicima da koriste kongitivne igre,
+                        kao i deci sa autizmom da se nauče društvenom ponašanju.
+                    </p>
+                </div>
+            </div>
+            <div id="id11" style="display:none;">
+                <div style="padding:15px;position:fixed;"><img src="Slike/EmmyNoether.jpg" alt="" style="width:inherit;height:inherit;" /></div>
+                <div style="padding:15px;width:45%;height:65%;text-align:justify;float:right;">
+                    <h3>Amalie Emmy Noether</h3>
+                    <p>Datum rodjenja: 1882.</p>
+                    <p>Datum smrti: 1935.</p>
+                    <p>
+                        Amalie Emmy Noether, rođena u Nemačkoj, doktorirala je matematiku 1907. godine. Do 1915. volontirala je u Matematičkom institutu, pošto joj, jer je žena,
+                        nije bio dozvoljeno da predaje i javno izlaže svoje radove. Prvi posao je dobila u Institutu u Getingenu. Pored podrške čuvenog matematičara Hilberta predavala je skoro tajno,
+                        zamenjujući ga na predavanjima kao njegova asistentkinja. Kasnije je, zahvaljujući zalaganju Hilberta i Alberta Einsteina, dobila položaj docentkinje.
+                        Amalie Emmy Noether dala je značajan doprinos matematičkoj osnovi opšte teorije relativiteta naučnika Einsteina,
+                        u okviru koje je razradila dve teoreme bitne za matematičku podršku ove teorije i fizike elementarnih čestica. Ostavila je veliki broj značajnih radova iz teorije grupa i algebre.
+                        Zbog svog jevrejskog porekla bila je prinuđena da 1933. godine emigrira u SAD.
+                    </p>
+                </div>
+            </div>
+            <div id="id12" style="display:none;">
+                <div style="padding:15px;position:fixed;"><img src="Slike/AnnieMaunder.jpg" alt="" style="width:inherit;height:inherit;" /></div>
+                <div style="padding:15px;width:45%;height:65%;text-align:justify;float:right;">
+                    <h3>Annie Russell Maunder</h3>
+                    <p>Datum rodjenja: 1868.</p>
+                    <p>Datum smrti: 1947.</p>
+                    <p>
+                        Matematičarka Annie Russell Maunder bila je pionirka astronomske fotografije. Godine 1830. zaposlila se kao asistentknja poznatog astronoma Edwarda Waltera Maundera, za koga se kasnije udala.
+                        Konstruisala je prenosivu širokougaonu kameru pomoću koje je, tokom pomračenja 1898. godine, napravila prve fotografije Sunčeve korone.
+                        Prema tadašnjim društvenim normama ove fotografije objavljivane su pod imenom njenog supruga.
+                        Godine 1908. bračni par Maunder izdao je knjigu u čijem je predgovoru Edward Walter Maunder priznao da je za gotovo čitav rad zaslužna njegova supruga Annie.
+                        Bračni par poznat je i po svom "dijagramu leptira" koji pokazuje da broj Sunčevih pega varira vremenom. Annie Russell Maunder je formirala osnovu solarne fizike.
+                        Jedan krater na tamnoj strani Meseca nazvan je Maunder.
+                    </p>
+                </div>
+            </div>
+            <div id="id13" style="display:none;">
+                <div style="padding:15px;position:fixed;"><img src="Slike/VeraRubin.jpg" alt="" style="width:inherit;height:inherit;" /></div>
+                <div style="padding:15px;width:45%;height:65%;text-align:justify;float:right;">
+                    <h3>Vera Rubin</h3>
+                    <p>Datum rodjenja: 1928.</p>
+                    <p>Datum smrti: 2016.</p>
+                    <p>
+                        Američka astronomkinja Vera Rubin bila je pionirka na polju galaktičke rotacije. Diplomirala je astronomiju i bezuspešno pokušala da se dalje školuje na Prinstonu,
+                        gde ženama nije bilo dozvoljeno da studiraju astronomiju sve do 1975. godine. Doktorirala je na Georgetown Univerzitetu. Prva je žena kojoj je bilo dozvoljeno da koristi instrumente na Palomar opservatoriji.
+                        Ukupno je analizirala preko 200 galaksija. Njena otkrića na polju astronomije donela su joj mnoga priznanja, između ostalog i Zlatnu medalju Londonskog kraljevskog astronomskog društva.
+                        Proračuni Vere Rubin pokazali su da bi u aureolama galaksija moralo postojati mnogo više nevidljive mase od one koju možemo videti. Na temelju tih zaključaka razvijena je teorija o tamnoj materiji.
+                    </p>
+                </div>
+            </div>
+            <div id="id14" style="display:none;">
+                <div style="padding:15px;position:fixed;"><img src="Slike/NettieStevens.jpg" alt="" style="width:inherit;height:inherit;" /></div>
+                <div style="padding:15px;width:45%;height:65%;text-align:justify;float:right;">
+                    <h3>Nettie Stevens</h3>
+                    <p>Datum rodjenja: 1861.</p>
+                    <p>Datum smrti: 1912.</p>
+                    <p>
+                        Amerikanka Nettie Stevens bila je jedna od prvih žena sa doktoratom u oblasti citogenetike. Objasnila je hromozomske osnove polnog određenja (mehanizam kako X i Y hromozomi određuju pol jedinke).
+                        Ovo otkriće razbilo je mnoge predrasude. Pre ovog otkrića smatralo se da su žene odgovorne za pol deteta. Nettie Stevens se upisala na studije na Stanford univerzitet sa 35 godina.
+                        Godine 1903. doktorirala je na temu fiziologija insekata. Svoja istraživanja vršila je na koledžu Bryn Mawr, gde nikada nije dobila zvanje redovnog profesora.
+                        Umrla je pre nego što je naučna zajednica shvatila značaj njenog otkrića, a njene zasluge pripisane su naučniku Thomasu Morganu koji je za njih dobio Nobelovu nagradu.
+                    </p>
+                </div>
+            </div>
+            <div id="id15" style="display:none;">
+                <div style="padding:15px;position:fixed;"><img src="Slike/AdaLovelace.jpg" alt="" style="width:inherit;height:inherit;" /></div>
+                <div style="padding:15px;width:45%;height:65%;text-align:justify;float:right;">
+                    <h3>Ada Augusta Byron, Countess of Lovelace</h3>
+                    <p>Datum rodjenja: 1815.</p>
+                    <p>Datum smrti: 1852.</p>
+                    <p>
+                        Ada Bajron, grofica od Lavlejsa, smatra se prvim kompjuterskim programerom. Njen matematički talenat je doveo do aktivne saradnje sa Čarlsom Bebidžom
+                        (Charles Babbage) – „ocem računara“. Zajedno su radili na stvaranju analitičke mašine.
+                        U jednoj od njenih beležaka nađen je detaljan algoritam za izračunavanje Bernulijevih brojeva. Ovaj algoritam smatra se prvim kompjuterskim programom.
+                        Na kraju svog dela se potpisala kao A. L. L. jer je za žene, tog doba,  bilo neprihvatljivo da se bave bilo kakvim naučnim spisima.
+                        Od 1998. godine, „Udruženje britanskih programera“ počelo je da dodeljuje medalju u njenu čast, a u SAD-u napravljen je kompjuterski program koji je nazvan Ada.
+                        Od 2009. Godine, 15. oktobra se obeležava Dan Ade Lavlejs, kako bi se skrenula pažnja na često zanemarivanje doprinosa žena matematici i nauci.
+                    </p>
+                </div>
+            </div>
+            <div id="id16" style="display:none;">
+                <div style="padding:15px;position:fixed;"><img src="Hypatia.png" alt="" style="width:inherit;height:inherit;" /></div>
+                <div style="padding:15px;width:45%;height:65%;text-align:justify;float:right;">
+                    <h3>Hipatija</h3>
+                    <p>Datum rodjenja: 370.</p>
+                    <p>Datum smrti: 415.</p>
+                    <p>O Hipatijinoj reputaciji matematičarke i filozofkinje saznajemo iz posrednih izvora. Ništa od njenih spisa nije sačuvano i malo se s pouzdanošću zna o njenom životu. Njen otac, Teon, bio je matematičar i astronom pri muzeju u Aleksandriji. Hipatija je stekla obrazovanje koje je uključivalo matematiku i astronomiju, kao i obuku u neoplatoničarskoj školi. Napisala je knjige iz matematike koje su sadržale komentare na konusne preseke Apolonija iz Perga, kao i komentare Diofanta. Podučavala je astronomiji i matematici, kao i filozofskim učenjima Platona i Aristotela. Među njenim učenicima je bio i Sinesije, koji je pisao o Hipatijinom znanju mehanike i tehnike demonstriranom kada mu je pomagala da osmisli hidrometar i srebrni astrolab. Napad na Hipatiju se desio 415. godine na ulicama Aleksandrije. Razbesnela rulja pristalica aleksandrijskog patrijarha Kirila, skinula ju je sa kola u prolazu i divljački iskasapila.</p>
+                </div>
+            </div>
+            <div id="id17" style="display:none;">
+                <div style="padding:15px;position:fixed;"><img src="" alt="" style="width:inherit;height:inherit;" /></div>
+                <div style="padding:15px;width:45%;height:65%;text-align:justify;float:right;">
+                    <h3>Ksenija Atanasijević</h3>
+                    <p>Datum rodjenja: 1894.</p>
+                    <p>Datum smrti: 1981.</p>
+                    <p>Prva žena koja je na Beogradskom univerzitetu stekla akademsku titulu doktora nauka u Srbiji . Docentkinja Filozofskog fakulteta za predmet “Istorija klasične filozofije” od 1923. godine. Na prvoj fakultetskoj sednici, etnolog Dr Tihomir Đorđević dočekao ju je rečima: „Čestitam vam gospođice, ušli ste u pakao!” Krug profesora, godinama je sprečavao njen izbor u vanrednu profesorku. Profesor Miloš Trivunac obrazložio je svoje protivljenje rečima: „Ima krajeva u Srbiji gde žene ljube u ruku mlađe muškarce, a vi hoćete da date katedru profesora jednoj mladoj devojci”. “Enciklopedija Britanika” je uvrstila u svoje odrednice njen doktorski rad o Đordanu Brunu, kao relevantnu literaturu za shvatanje Brunove misli. Na osnovu svega što je ostavila iza sebe, mnogi smatraju da je stvorila originalni i celovit filozofski sistem. </p>
+                </div>
+            </div>
+            <div id="id18" style="display:none;">
+                <div style="padding:15px;position:fixed;"><img src="Slike/RosalindFranklin.jpg" alt="" style="width:inherit;height:inherit;" /></div>
+                <div style="padding:15px;width:45%;height:65%;text-align:justify;float:right;">
+                    <h3>Rosalind Elsie Franklin</h3>
+                    <p>Datum rodjenja: 1920.</p>
+                    <p>Datum smrti: 1958.</p>
+                    <p>Nakon doktorata iz hemije, provela je tri godine na institutu u Parizu, gde se upoznala s rendgenskim zracima i tehnikama difrakcije. Za ispitivanje strukture bioloških molekula, prva je primenila kristalografiju pomoću rendgenskih zraka. 1950. godine vratila se na King's koledž,  u Londonu, gde su ženama tih godina, zabranjivali da ručaju u istim prostorijama sa muškarcima. Iz domena virusa publikovala je 17 naučnih radova, a njena istraživačka grupa postala je prva osnova za nastanak nove naučne discipline - virusologije. Franklin je najpoznatija po difrakcionom snimku DNK  (fotografija 51) koji je doveo do otkrića DNK dvostrukog heliksa. Maurice Wilkins, njen saradnik, bez njenog  znanja je fotografiju i rezultate pokazao Jamesu Watsonu i Francisu Cricku. Mada su taj snimak i njena precizna interpretacija pružili značajan uvid u DNK strukturu, njen naučni doprinos tom otkriću se retko navodi. Watson, Crick i Wilkins dobili su Nobelovu nagradu 1962.godine.</p>
+                </div>
+            </div>
+            <div id="id19" style="display:none;">
+                <div style="padding:15px;position:fixed;"><img src="Slike/AliceParker.png" alt="" style="width:inherit;height:inherit;" /></div>
+                <div style="padding:15px;width:45%;height:65%;text-align:justify;float:right;">
+                    <h3>Alice Parker</h3>
+                    <p>Datum rodjenja: 1895.</p>
+                    <p>Datum smrti: ?</p>
+                    <p>Izumela je i patentirala sistem centralnog grejanja koji radi na gas. Početkom dvadesetog veka, prirodni gas se primenjivao u industrijskom grejanju, ali ga niko nije koristio za grejanje privatnih kuća. Alice Parker je patentirala ideju da se koristi jedan centralno lociran izvor toplote, koja kruži kroz kuću sistemom cevi. Iako njena verzija nikada nije realizovana, bila je inspiracija za sisteme centralnog grejanja koji se danas koriste. O njenom životu se vrlo malo zna.</p>
+                </div>
+            </div>
+            <div id="id20" style="display:none;">
+                <div style="padding:15px;position:fixed;"><img src="Slike/MargaretKnight.jpg" alt="" style="width:inherit;height:inherit;" /></div>
+                <div style="padding:15px;width:45%;height:65%;text-align:justify;float:right;">
+                    <h3>Margaret E. Knight</h3>
+                    <p>Datum rodjenja: 1838.</p>
+                    <p>Datum smrti: 1914.</p>
+                    <p>Nazvali su je “Lady Edison” 19. veka. Prijavila je 87 patenata, od kojih je najpoznatija mašina za proizvodnju papirnih kesa sa ravnim dnom (1871. godine). Mehaničar Charles Annan, pokušao je da joj ukrade izum govoreći da nešto tako briljantno nikad ne bi mogla da izumi "devojka". Sa 12 godina, radila je u fabrici prerade pamuka i bila je svedokinja nesreće u kojoj je poginuo radnik. Tada je izumela bezbednosni uredjaj za mašine koji nikad nije patentiran, ali su ga prihvatile i druge fabrike. U 2006. godini je ušla u "Kuću slavnih nacionalnih izumitelja" (National Inventors Hall of Fame).</p>
+                </div>
+            </div>
+            <div id="id21" style="display:none;">
+                <div style="padding:15px;position:fixed;"><img src="Slike/MarieBrown.jpg" alt="" style="width:inherit;height:inherit;" /></div>
+                <div style="padding:15px;width:45%;height:65%;text-align:justify;float:right;">
+                    <h3>Marie Van Brittan Brown</h3>
+                    <p>Datum rodjenja: 1922.</p>
+                    <p>Datum smrti: 1999.</p>
+                    <p>Ova afroamerička  izumiteljka patentirala je sistem videonadzora 1969. godine, a bio je namenjen ličnoj sigurnosti, budući da je policija bila spora u odazivu za pomoć u njenoj njujorškoj četvrti. Njen izum predstavlja osnovu modernog videonadzora u privatne i policijske svrhe. Sastojao se od sistema kamera koje su mogle da se pokreću i pokrivaju sve uglove. Sve što bi kamere zabeležile pojavljivalo bi se na centralnom monitoru, a kao poseban dodatak Mari je u sistemu predvidela i daljinski kojim bi se automatski otključavala i zaključavala vrata. Bio je to pravi sistem video nadzora u mnogome sličan onom koji danas poznajemo.</p>
+                </div>
+            </div>
+            <div id="id22" style="display:none;">
+                <div style="padding:15px;position:fixed;"><img src="Slike/MaryWalton.jpg" alt="" style="width:inherit;height:inherit;" /></div>
+                <div style="padding:15px;width:45%;height:65%;text-align:justify;float:right;">
+                    <h3>Mary Walton</h3>
+                    <p>Datum rodjenja: 1827.</p>
+                    <p>Datum smrti: 1894.</p>
+                    <p>1879. godine zaštitila je svoj prvi patent, koji se odnosio na redukciju štetnih gasova, njihovim odvođenjem u rezervoare sa vodom, koja bi kasnije bili ispuštani u gradsku kanalizaciju. Isti patent, kasnije je korišćen i kod lokomotiva na parni pogon. Nešto kasnije, razvojem železnice u gradovima pojavljuje se drugačija vrsta zagađenja – buka. Meri, koja je živela na Menhetnu, u svom podrumu je izradila model železničke pruge, koji joj je pomogao da pronađe izvanredan sistem koji je u velikoj meri oslobodio buke stanovnike Njujorka. Za podlogu pruge u svom podrumu uzela je drvo, premazano smolom, presvučeno pamukom i napunjeno peskom. Ustanovila je da njen metod apsorbuje vibracije, ali i zvuk. Meri je svoj patent prodala gradskoj kompaniji New York City's Metropolitan Railroad, koja je ubrzo počela eksploataciju njenog patenta. Još za vremena života Meri Volton, ugledne publikacije su je proglašavale herojem i značajnom feministkinjom.</p>
+                </div>
+            </div>
+            <div id="id23" style="display:none;">
+                <div style="padding:15px;position:fixed;"><img src="" alt="Ne postoje dostupne fotografije" style="width:inherit;height:inherit;" /></div>
+                <div style="padding:15px;width:45%;height:65%;text-align:justify;float:right;">
+                    <h3>Letitia Mumford Geer</h3>
+                    <p>Datum rodjenja: 1852.</p>
+                    <p>Datum smrti: ?</p>
+                    <p>Patentirala je jednoručni špric 1899.godine. Nema dostupnih podataka o njenom životu.</p>
+                </div>
+            </div>
+            <div id="id24" style="display:none;">
+                <div style="padding:15px;position:fixed;"><img src="Slike/AdaYonath.jpg" alt="" style="width:inherit;height:inherit;" /></div>
+                <div style="padding:15px;width:45%;height:65%;text-align:justify;float:right;">
+                    <h3>Ada Yonath</h3>
+                    <p>Datum rodjenja: 1939.</p>
+                    <p>Rođena u ekstremno siromašnoj jevrejskoj porodici i sa 11 godina je morala da radi. Uprkos siromaštvu, studirala je biohemiju i doktorirala kristalografiju na Weizmann univerzitetu u Jerusalimu. 1971. godine osnovala je prvu laboratoriju za kristalografsko proučavanje proteina u Izraelu. Od 1986. do 2004. godine vodila je istraživački tim na Institutu Max Planck u Berlinu. Vizuelno je prikazala put proteina u nastajanju (ribozomski tunel), otkrila elemente dinamike koji omogućavaju njegovo učešće u unutar-ćelijskim regulacijama,  uvela je novu tehniku – krio bio-kristalografiju, koja je postala rutina u strukturalnoj biologiji. Za svoj rad na strukturi i funkciji ribozoma, 2009. godine dobila je Nobelovu nagradu za hemiju, zajedno sa trojicom kolega i tako postala jedina žena sa Bliskog istoka kojoj je uručena ova nagrada. Njihov rad značajan je jer su pokazali na koji način funkcionišu ribozomi važni za delovanje novih antibiotika, koji se bore protiv nastojanja bakterija da postanu rezistentne na dejstvo tradicionalnih antibiotika. Novi lekovi dejstvuju tako što blokiraju funkciju ribozoma u bakterijskim ćelijama, sprečavajući ih da stvore proteine koji im omogućavaju da prežive. „Ribozomi, koji proizvode proteine i od velikog su značaja za sam život, imaju ključnu ulogu u proizvodnji novih antibiotika“, naveo je Nobelov komitet. Inače, ribozomi prenose genetski kod u proteine koji su delovi svih živih organizama.</p>
+                </div>
+            </div>
+            <div id="id25" style="display:none;">
+                <div style="padding:15px;position:fixed;"><img src="Slike/BarbaraMcClintock.jpg" alt="" style="width:inherit;height:inherit;" /></div>
+                <div style="padding:15px;width:45%;height:65%;text-align:justify;float:right;">
+                    <h3>Barbara McClintock</h3>
+                    <p>Datum rodjenja: 1902.</p>
+                    <p>Datum smrti: 1992.</p>
+                    <p>Američka naučnica, citogenetičarka, doktorirala je botaniku. Izučavala je hromozome kukuruza i prva razvila tehnike za njihovu vizuelizaciju,. Napravila je prvu genetičku mapu kukuruza i otkrila na koji način geni utiču na fizičke karakteristike ove biljke.  Koristeći samo optički mikroskop, dublje je proučila proces rekombinacije gena (crossing over), mehanizma kojim hromozomi razmenjuju informacije. Otkrila je efekat pokretnih hromozomskih segmenata, kasnije nazvanih jumping genes (pokretni geni). Suština njenog otkrića je u tome da genetska informacija nije stacionarna i da su ovi pokretni elementi (geni) odgovorni za diverzitet ćelija u toku razvoja organizma. Ona je ovaj efekat otkrila dvadesetak godina pre molekularnih biologa koji su radili sa jednostavnijim životnim oblicima. Njena istraživanja su bila prihvaćena tek krajem 1960-tih, kada su ostali genetičari uvideli opšti značaj njenih otkrića za celokupno razumevanje života na Zemlji. Nobelovu nagradu dobila je tek 1983. godine, u svojoj 81. godini i verovatno je bila poslednja koja je to saznala. Živela je povučeno, u kući bez telefona. Ona je prva žena koja je samostalno dobila Nobelovu nagradu iz medicine i fiziologije. </p>
+                </div>
+            </div>
+            <div id="id26" style="display:none;">
+                <div style="padding:15px;position:fixed;"><img src="Slike/ChienWu.jpg" alt="" style="width:inherit;height:inherit;" /></div>
+                <div style="padding:15px;width:45%;height:65%;text-align:justify;float:right;">
+                    <h3>Chien Shiung Wu</h3>
+                    <p>Datum rodjenja: 1912.</p>
+                    <p>Datum smrti: 1997.</p>
+                    <p>Rođena u Kini, odbranila je doktorsku tezu iz fizike 1936. na prestižnom Berkeley univerzitetu. Bila je uključena u “Manhattan project” tokom Drugog svetskog rata. Bavila se teorijom elementarnih čestica i eksperimentalno dokazala nepostojanje pravila simetrije. Njenom  istraživanju, pridružili su se teorijski fizičari Tsung-Dao Lee i Chen Ning Yang, koji su 1957. dobili Nobelovu nagradu za otkriće neočuvanja pariteta u slabim interakcijama. Chien Shiung Wu nije bila uključena. 1975. godine, predsednik Odseka za fiziku univerziteta Kolumbija, povećao joj je platu da bude jednaka muškim kolegama. Poznata je njena izjava: "Pitam se imaju li atomi, matematički simboli i molekuli DNK polnu preferenciju?". Prva je žena nagrađena prestižnom Wolfovom nagradom  (Izrael, 1978).</p>
+                </div>
+            </div>
+            <div id="id27" style="display:none;">
+                <div style="padding:15px;position:fixed;"><img src="Slike/EllenRichards.jpg" alt="" style="width:inherit;height:inherit;" /></div>
+                <div style="padding:15px;width:45%;height:65%;text-align:justify;float:right;">
+                    <h3>Ellen Henrietta Swallow Richards</h3>
+                    <p>Datum rodjenja: 182.</p>
+                    <p>Datum smrti: 1911.</p>
+                    <p>Ellen Swallow Richards je prva žena koja je studirala hemiju na prestižnom MIT univerzitetu u Americi, iako joj nije bilo dozvoljeno da na istom i doktorira. Prva je upotrebila termin “ekologija” 1892. godine. Verovala je da praktična primena nauke može promeniti svet.  Bavila se ispitivanjem toksičnih materija u hrani, u kućnim potrepštinama i nameštaju, ispitivala je zagađenje vode i zalagala se za dizajniranje bezbednih i efikasnih kanalizacionih odvoda. Pokrenula je prve studije ispravnosti tekuće vode i pokazala je da je neophodno uspostaviti standarde u ovoj oblasti. Inicirala je donošenje prvih inspekcijskih zakona za bezbednost hrane u Americi. Pored toga što se bavila  industrijskom hemijom, bavila se i takozvanom kućnom hemijom (domaćinstvom), i objavila 2 knjige o kuvanju i čišćenju. Zahvaljujući njenom zalaganju otvorena je prva ženska laboratorija na MIT univerzitetu u kojoj je ona, često bez novčane nadoknade, obrazovala i učila devojke osnovama hemije, biologije, nutricionizma, mineralogije. Deklarisala se kao ,,pragmatična feministkinja“ i smatrala je da je ženski neplaćeni rad jedan od osnovnih pokretačkih mehanizama razvoja ekonomije. 1879. postala je prva žena članica Američkog instituta za metalurgiju.</p>
+                </div>
+            </div>
+            <div id="id28" style="display:none;">
+                <div style="padding:15px;position:fixed;"><img src="Slike/MariaGoeppert.jpg" alt="" style="width:inherit;height:inherit;" /></div>
+                <div style="padding:15px;width:45%;height:65%;text-align:justify;float:right;">
+                    <h3>Maria Goeppert-Mayer</h3>
+                    <p>Datum rodjenja: 1906.</p>
+                    <p>Datum smrti: 1972.</p>
+                    <p>
+                        Američka naučnica nemačkog porekla, studirala je matematiku na univerzitetu u Getingenu, Nemačka. Pri kraju studija počinje da se interesuje za fiziku i odlučuje da radi doktorat o teoriji dvostruke fotonske apsorpcije. Njen doktorski rad je ocenjen kao ,,remek delo čistoće i preciznosti“, od strane trojice Nobelovaca. Neke od pretpostavki koje je iznela u svojoj doktorskoj disertaciji 1930, eksperimentalno su potvrđene tek šezdesetih godina 20. veka. Ona je otkrila da su jezgra koje  sadrže npr. 2, 8, 14, 20, 5O, 82 protona ili neutrona stabilnija od drugih. Ti su brojevi nazvani "magičnim brojevima". Posebno su stabilna i jako zastupljena u prirodi tzv. dvostruko magična jezgra, koje imaju magični• broj i protona i neutrona (to su npr. 2He4 , s016 , 20Ca40 , s2Pb208 ). Da bi objasnila ovu pojavu, razvila je  nuklearni model “ljuske” atomskog jezgra (shell model), i za to dobila Nobelovu nagradu 1963. Prvi stalni plaćeni posao dobila je u 53. godini života, kao saradnica nuklearnog fizičara Edvarda Telerass-a. Pored svih uspeha, Maria Goeppert-Mayer često je govorila da je „bilo teško biti žena fizičarka, ali da je bilo skoro nemoguće biti udata žena fizičarka“. U njenu čast, jedan krater na Veneri nosi naziv Goeppert-Mayer.
+                    </p>
+                </div>
+            </div>
+            <div id="id29" style="display:none;">
+                <div style="padding:15px;position:fixed;"><img src="Slike/MaryamMirzakhani.jpg" alt="" style="width:inherit;height:inherit;" /></div>
+                <div style="padding:15px;width:45%;height:65%;text-align:justify;float:right;">
+                    <h3>Maryam Mirzakhani</h3>
+                    <p>Datum rodjenja: 1977.</p>
+                    <p>Datum smrti: 2017.</p>
+                    <p>Maryam Mirzakhani, iranska matematičarka, jedina žena koja je ikada dobila Fieldsovu medalju (2014. Godine), najveću svetsku nagradu za matematiku. Diplomirala je matematiku u Teheranu. Dva puta je osvojila zlatnu medalju na medjunarodnoj matematičkoj olimpijadi, sa maksimalnim brojem bodova. Doktorirala je na Harvardu, predavala na Princetonu i Stanfordu. Tokom svoje kratke karijere bavila se Tajhmilerovom teorijom, hiperboličnom i simplektičkom geometrijom, ergodičnom teorijom, a najveći doprinos je dala teoriji prostora modula Rimanovih površina. Volela je poeziju, a o svom radu u matematici je rekla: ,,Nemam poseban recept... To je kao da ste izgubljeni u džungli i pokušavate da iskoristite sva znanja koja možete sakupiti kako biste došli do novih otkrića i, uz malo sreće, možete pronaći izlaz“. Umrla je od raka dojke u 40. godini života.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="topnav" id="myTopnav">
+        <a href="#contact">Kontakt</a>
+        <a href="#list">Biografije</a>
+        <a href="#intro">O projektu</a>
+        <a href="#home" class="active">Početna</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="icon-bar">
+        <a href="https://www.facebook.com/%C5%BDenski-Potpis-1346951175406939/" target="_blank"><i class="fa fa-facebook fa-xs"></i></a>
+        <a href="https://www.instagram.com/zenskipotpis/?hl=sr" target="_blank"><i class="fa fa-instagram fa-xs"></i></a>
+        <a href="https://www.youtube.com/channel/UCRLOd2ISmtqoGR9bKCj4BDg" target="_blank"><i class="fa fa-youtube fa-xs"></i></a>
+    </div>
+    <div class="dotnav">
+        <a href="#home"><i class="fa fa-circle-thin fa-xs"></i></a>
+        <a href="#intro"><i class="fa fa-circle-thin fa-xs"></i></a>
+        <a href="#list"><i class="fa fa-circle-thin fa-xs"></i></a>
+        <a href="#contact"><i class="fa fa-circle-thin fa-xs"></i></a>
+    </div>
+    <div class="the_bod">
+        <div id="home">
+            <img src="whitelogos.png" style="width:100%; height:50%;" />
+        </div>
+        <div id="overlay">
+            <div id="intro">
+                <p class="naslov">O projektu</p>
+                <div class="text">
+                    <p>Cilj projekta „Ženski potpis“ je dekonstrukcija rodnih stereotipa kroz promociju naučnog stvaralaštva žena. Kroz širenje informacija, menjamo društvenu klimu opterećenu predrasudama, diskriminacijom i politikom ignorisanja ženskih dostignuća u nauci. 
+                        Upoznajući širu javnost sa naučnim radom žena kroz istoriju i u sadašnjici, želimo da podstaknemo inicijativu za povećanjem broja informacija o naučnicama u programima formalnog i neformalnog obrazovanja. <br>
+                        Glavna promena koju donosimo je senzibilizacija  grupe mladih da prepoznaju i reaguju na pojave prećutkivanja naučnih rezultata žena, da prenesu novostečena znanja na svoje vršnjake i tako se bore protiv politike zaboravljanja. 
+                        Pokazujući im direktno uzore, omogućujemo devojkama da budu “promena koju žele” i povećaju svoj uticaj i vidljivost u životu zajednice.
+                        „Dečiji centar“ iz Zaječara, realizuje projekat „Ženski potpis“ uz podršku „Ekumenske inicijative žena“ (Omiš, Hrvatska). Projekat je podržan u dva navrata 2017. i 2018. godine.</p>
+						
+                </div>
+				<p class="naslov" style="font-size:72px;">O donatoru</p>
+				<div class="text">
+                    <p>
+							Ekumenska inicijativa žena (EIŽ) je hrvatska neprofitna organizacija koja kroz svoj program dodele financijskih potpora podržava projekte i razvoj osnovnih organizacija kojima upravljaju žene teologinje u Hrvatskoj, Bosni i Hercegovini, Crnoj Gori, Makedoniji, na Kosovu i u Srbiji. EIŽ je posvećena osnaživanju uloge žene u jačanju civilnog i međureligijskog dijaloga i potencijala vere kao pozitivnog faktora socijalne promene kroz izgradnju mira i pomirenja. S obzirom na svoj regionalni profil, EIŽ osigurava aktivistkinjama iz svoje mreže mogućnost susreta i razmenu iskustava s ciljem veće vidljivosti njihovog rada i veće mogućnosti za pristup resursima.
+						</p><br /><br />
+						
+                </div>
+
+            </div>
+            <div id="list">
+                <p class="naslov">Biografije</p>
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'Nauka')" id="defaultOpen">Naučnice</button>
+                    <button class="tablinks" onclick="openCity(event, 'Umetnost')">Umetnice</button>
+                    <button class="tablinks" onclick="openCity(event, 'Sport')">Sportistkinje</button>
+                    <button class="tablinks" onclick="openCity(event, 'Aktivizam')">Aktivistkinje</button>
+                    <button class="tablinks" onclick="openCity(event, 'Uticajne')">Uticajne žene danas</button>
+                    <button class="tablinks" onclick="openCity(event, 'Animacije')">Animacije</button>
+                    <button class="tablinks" onclick="openCity(event, 'FunFact')">Zanimljivosti</button>
+                </div>
+
+                <div id="Nauka" class="tabcontent">
+                    <ul class="spisak">
+                        <li>
+                            <b>A</b><br />
+                            <a href="javascript:void(0)" onclick="show('id17')">Atanasijević, Ksenija</a><br /><br />
+                        </li>
+                        <li>
+                            <b>B</b><br />
+                            <a href="javascript:void(0)" onclick="show('id1')">Bell Burnell, Jocelyn</a><br />
+                            <a href="javascript:void(0)" onclick="show('id2')">Bell Elion, Gertrude</a><br />
+                            <a href="javascript:void(0)" onclick="show('id21')">Brown, Marie</a><br /><br />
+                        </li>
+                        <li>
+                            <b>F</b><br />
+                            <a href="javascript:void(0)" onclick="show('id18')">Franklin, Rosalind</a><br /><br />
+                        </li>
+                        <li>
+                            <b>G</b><br />
+                            <a href="javascript:void(0)" onclick="show('id23')">Geer, Letitia</a><br />
+                            <a href="javascript:void(0)" onclick="show('id28')">Goeppert, Maria</a><br />
+                            <a href="javascript:void(0)" onclick="show('id3')">Goodall, Jane</a><br /><br />
+                        </li>
+                        <li>
+                            <b>H</b><br />
+                            <a href="javascript:void(0)" onclick="show('id4')">Hamilton, Margaret</a><br />
+                            <a href="javascript:void(0)" onclick="show('id16')">Hipatija</a><br />
+                            <a href="javascript:void(0)" onclick="show('id5')">Hodgkin, Dorothy</a><br />
+                            <a href="javascript:void(0)" onclick="show('id6')">Hopper, Grace</a><br /><br />
+                        </li>
+                        <li>
+                            <b>K</b><br />
+                            <a href="javascript:void(0)" onclick="show('id20')">Knight, Margaret</a><br /><br />
+                        </li>
+                        <li>
+                            <b>L</b><br />
+                            <a href="javascript:void(0)" onclick="show('id7')">Lamarr, Hedy</a><br />
+                            <a href="javascript:void(0)" onclick="show('id8')">Leavitt, Henrietta</a><br />
+                            <a href="javascript:void(0)" onclick="show('id15')">Lovelace, Ada</a><br /><br /><br />
+                        </li>
+                        <li>
+                            <b>M</b><br />
+                            <a href="javascript:void(0)" onclick="show('id10')">Matarić, Maja</a><br />
+                            <a href="javascript:void(0)" onclick="show('id25')">McClintock, Barbara</a><br />
+                            <a href="javascript:void(0)" onclick="show('id29')">Mirzakhani, Maryam</a><br />
+                            <a href="javascript:void(0)" onclick="show('id9')">Meitner, Lise</a><br /><br />
+                        </li>
+                        <li>
+                            <b>N</b><br />
+                            <a href="javascript:void(0)" onclick="show('id11')">Noether, Emmy</a><br /><br />
+                        </li>
+                        <li>
+                            <b>P</b><br />
+                            <a href="javascript:void(0)" onclick="show('id19')">Parker, Alice</a><br /><br />
+                        </li>
+                        <li>
+                            <b>R</b><br />
+                            <a href="javascript:void(0)" onclick="show('id27')">Richards, Ellen</a><br />
+                            <a href="javascript:void(0)" onclick="show('id12')">Russell Maunder, Annie</a><br />
+                            <a href="javascript:void(0)" onclick="show('id13')">Rubin, Vera</a><br /><br />
+                        </li>
+                        <li>
+                            <b>S</b><br />
+                            <a href="javascript:void(0)" onclick="show('id14')">Stevens, Nettie</a><br /><br />
+                        </li>
+                        <li>
+                            <b>W</b><br />
+                            <a href="javascript:void(0)" onclick="show('id22')">Walton, Mary</a><br />
+                            <a href="javascript:void(0)" onclick="show('id26')">Wu, Chien Shiung</a><br /><br />
+                        </li>
+                        <li>
+                            <b>Y</b><br />
+                            <a href="javascript:void(0)" onclick="show('id24')">Yonath, Ada</a><br /><br />
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="Umetnost" class="tabcontent">
+                    <h1>USKORO</h1>
+                </div>
+
+                <div id="Sport" class="tabcontent">
+                    <h1>USKORO</h1>
+                </div>
+
+                <div id="Aktivizam" class="tabcontent">
+                    <h1>USKORO</h1>
+                </div>
+
+                <div id="Uticajne" class="tabcontent">
+                    <h1>USKORO</h1>
+                </div>
+
+                <div id="Animacije" class="tabcontent">
+                    <div id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:800px;padding-right:126px;margin:0px auto 0px;">
+                        <div id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+                            <ul class="amazingslider-slides" style="display:none;">
+                                <li>
+                                    <a href="https://www.youtube.com/embed/ludIUr8KMrs?v=ludIUr8KMrs" class="html5lightbox" data-width="1960" data-height="1280"><img src="images/GraceHopper_Moment.jpg" alt="Grace Hopper" title="Grace Hopper" /></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/embed/F1nbeqE5_Uo?v=F1nbeqE5_Uo" class="html5lightbox" data-width="1960" data-height="1280"><img src="images/F1nbeqE5_Uo.jpg" alt="Margaret Hamilton" title="Margaret Hamilton" /></a>
+                                </li>
+                            </ul>
+                            <ul class="amazingslider-thumbnails" style="display:none;">
+                                <li><img src="images/GraceHopper_Moment-tn.jpg" alt="Grace Hopper" title="Grace Hopper" /></li>
+                                <li><img src="images/F1nbeqE5_Uo-tn.jpg" alt="Margaret Hamilton" title="Margaret Hamilton" /></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="FunFact" class="tabcontent">
+                    <h1>USKORO</h1>
+                </div>
+
+            </div>
+            <div id="contact">
+                <p class="naslov">Kontakt</p>
+                <p class="social">
+                    <a href="https://www.facebook.com/%C5%BDenski-Potpis-1346951175406939/" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+                    <a href="https://www.instagram.com/zenskipotpis/?hl=sr" target="_blank"><i class="fa fa-instagram fa-2x" ></i></a>
+                    <a href="https://www.youtube.com/channel/UCRLOd2ISmtqoGR9bKCj4BDg" target="_blank"><i class="fa fa-youtube fa-2x"></i></a><br /><br />
+                    Ili nas kontaktirajte na mejl zenskipotpis@gmail.com
+                </p>
+                <br /><br /><br />
+				<p class="social">
+					Objavljivanje ovog sajta  podržala je Ekumenska inicijativa žena iz Omiša, Hrvatska. Tekstovi i fotografije objavljeni na sajtu, odražavaju isključivo stavove njihovih autora/-ica i ne predstavljaju nužno i službene stavove EIŽ-a.
+				</p>
+				<br /><br /><br /><br />
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
